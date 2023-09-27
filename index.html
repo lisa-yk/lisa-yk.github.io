@@ -34,7 +34,8 @@
   </div>
 </body>
 <script>
-  let str = ''
+  if (document.body.clientWidth > 500) {
+     let str = ''
   document.onkeydown = function (e) {
     str = str + e.key
     if (str.indexOf('151023') > -1) {
@@ -42,6 +43,11 @@
       document.querySelector('.container').style.opacity = 1
     }
   }
+  } else {
+    document.querySelector('.container').style.display = 'flex'
+      document.querySelector('.container').style.opacity = 1
+  }
+ 
 </script>
 
 </html>
