@@ -12,6 +12,8 @@
     display: none;
     flex-direction: column;
     align-items: center;
+    transition: all 2s ease 0s;
+    opacity: 0;
   }
 
   .container img {
@@ -21,15 +23,14 @@
     margin-bottom: 20px;
   }
 </style>
-
 <body>
   <div class="container">
-    <img src="./images/1.jpeg" />
-    <img src="./images/2.jpeg" />
-    <img src="./images/3.jpeg" />
-    <img src="./images/4.jpeg" />
-    <img src="./images/5.jpeg" />
-    <img src="./images/6.jpeg" />
+    <img src="https://s2.loli.net/2023/09/27/vo2NLVxEwWA3lIb.jpg" />
+    <img src="https://s2.loli.net/2023/09/27/pNBHFGYd9JxKaeW.jpg" />
+    <img src="https://s2.loli.net/2023/09/27/D9jan87GX3ChvtV.jpg" />
+    <img src="https://s2.loli.net/2023/09/27/vMKoRqxJ6OjlT8n.jpg" />
+    <img src="https://s2.loli.net/2023/09/27/1a5OIDdovMR9726.jpg" />
+    <img src="https://s2.loli.net/2023/09/27/iKjYLt5agEGFlC6.jpg" />
   </div>
 </body>
 <script>
@@ -38,6 +39,7 @@
     str = str + e.key
     if (str.indexOf('151023') > -1) {
       document.querySelector('.container').style.display = 'flex'
+      document.querySelector('.container').style.opacity = 1
     }
   }
 </script>
